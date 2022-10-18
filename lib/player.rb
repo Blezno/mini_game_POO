@@ -37,5 +37,54 @@ class Player
   end
 end
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EXO 2 EN COURS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+# class HumanPlayer < Player
+
+#   def initialize(name)
+#     attr_accessor :weapon_level
+#     @life_points = 100
+#     @weapon_level = 1
+#   end
+
+#   def show_state
+#     puts "#{@name} a #{@life_points} points de vie et une arme de niveau #{@weapon_level} ! "
+#   end
+
+#   def compute_damage
+#     rand(1..6) * @weapon_level
+#   end
+
+#   def search_weapon
+#     new_weapon = rand(1..6)
+#     puts "Eh! Bravo tu as trouvé une nouvelle arme de niveau #{new_weapon} "
+
+#     if new_weapon > weapon_level
+#       puts "Eh beh mon petit cochon je vois qu'on se rince avec cette nouvelle arme plus puissante! "
+#     else new_weapon < weapon_level
+#       puts "Pfff c'est quoi ce kunai tout pété que tu nous a choppé ??? "
+#   end
+
+#   def search_health_pack
+#       health_pack = rand(1..6)
+
+#       if health_pack == 1
+#         puts "Tu n'as rien trouvé... Faut aller chercher dans un autre buisson "
+      
+#       elsif health_pack == 6
+#         puts "JACKPOT! tu as trouvé un pack de +80 points de vie ! "
+#         if @life_points + 80 > 100
+#           @life_points = 100
+#         else @life_points = @life_points + 80
+#         end
+
+#       else puts "Bravo petit ninja! Tu as trouvé un pack de +50 points de vie ! "
+#         if @life_points + 50 > 100
+#           @life_points = 100
+#         else @life_points = @life_points + 50
+#         end
+#       end
+
+#   end
+# end 
   
