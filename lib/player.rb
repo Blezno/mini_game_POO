@@ -24,8 +24,8 @@ class Player
   end
 
   def attacks(player_receiving_damage)
-    damage = compute_damage
     puts "Le joueur #{self.name} attaque le joueur #{player_receiving_damage.name}! " 
+    damage = compute_damage
     #self=celui qui lance la méthode ish
     puts "Il lui inflige #{damage} points de dommages avec son lancer de kunai !"
     player_receiving_damage.gets_damage(damage) 

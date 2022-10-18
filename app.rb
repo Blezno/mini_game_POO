@@ -19,6 +19,7 @@ while player1.life_points >0 && player2.life_points >0
    puts "Ça gronde à Konoha! Voici l'état de nos ninjas : "
    player1.show_state
    player2.show_state
+   print "\n"
 
    puts "La tension est à couper au couteau, passons à la phase d'attaque : "
 
@@ -30,11 +31,10 @@ while player1.life_points >0 && player2.life_points >0
 
    player2.attacks(player1)
 
-   break if player2.life_points <= 0  
+   break if player2.life_points <= 0  || player1.life_points <= 0
 
-   
    player1.attacks(player2)
-
+   print "\n"
    
 
 
